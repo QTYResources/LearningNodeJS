@@ -7,7 +7,7 @@
     "colors": "*",
     "optimist": "*",
     "underscore": "*", 
-    "express": "3.0",
+    "express": "4.17",
     "jade": "*",
     "stylus": "*",
     "redis": "*",
