@@ -19,12 +19,15 @@ Please note that the examples are not production code and have not been carefull
 源代码下载地址：<https://resources.oreilly.com/examples/0636920024606/>
 
 Chapter01 第1章 Node.js：启动与运行
-
-Chapter02 第2章 Node 与 REPL
     01. helloworld.js                                   ===> 使用 Node 创建 Hello, World 程序
     02. OpenAndWriteFile.js                             ===> 异步方式打开文件并写入数据
     03. PrintNumberAndFileContent.js                    ===> 输出数字序列和文件内容的服务程序
     04. TestThreeExamples.js                            ===> 第3个示例的测试程序
+
+Chapter02 第2章 Node 与 REPL
+    01. CustomREPL.js                                   ===> 定制 REPL
+    02. MonitorTcpSocket.js                             ===> 使用 REPL 监听 TCP socket
+    03. PreloadedModules.js                             ===> 创建可以预加载模块的自定义 REPL
 
 Chapter03 第3章 Node 核心库
 
