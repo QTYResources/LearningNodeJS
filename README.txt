@@ -10,13 +10,13 @@ O'Reilly books are here to help you get your job done. In general, you may use t
 
 We appreciate, but do not require, attribution. An attribution usually includes the title, author, publisher, and ISBN.
 
-If you think your use of code examples falls outside fair use or the permission given here, feel free to contact us at <permissions@oreilly.com>.
+If you think your use of code examples falls outside fair use or the permission given here, feel free to contact us at permissions@oreilly.com.
 
 Please note that the examples are not production code and have not been carefully testing. They are provided "as-is" and come with no warranty of any kind.
 
 《Node学习指南》配套源代码
 
-源代码下载地址：<https://resources.oreilly.com/examples/0636920024606/>
+源代码下载地址：https://resources.oreilly.com/examples/0636920024606/
 
 Chapter01 第1章 Node.js：启动与运行
     01. helloworld.js                                   ===> 使用 Node 创建 Hello, World 程序
@@ -30,7 +30,24 @@ Chapter02 第2章 Node 与 REPL
     03. PreloadedModules.js                             ===> 创建可以预加载模块的自定义 REPL
 
 Chapter03 第3章 Node 核心库
-
+    01. StdinAndStdout.js                               ===> 使用 stdin 和 stdout 来读取和写入数据（回显）
+    02. SetTimeout.js                                   ===> setTimeout 函数的使用
+    03. TCPServer.js                                    ===> 一个简单的 TCP 服务器，并在端口 8124 上监听客户端连接请求
+    04. TCPClient.js                                    ===> 使用 TCP 客户端套接字发送数据给 TCP 服务端
+    05. UnixHttpServer.js                               ===> 基于 Unix 套接字的 HTTP 服务器
+    06. ConnectUnixHttpServer.js                        ===> 连接到 Unix 套接字并输出接收的数据
+    07. UDPClient.js                                    ===> UDP 客户端，将输入到终端的信息通过 UDP 套接字发送出去
+    08. UDPServer.js                                    ===> 创建 UDP 服务端，绑定 8124 端口并接收数据
+    09. Readline.js                                     ===> 使用 Readline 库创建一个简单的命令驱动型用户界面
+    10. PwdProcess.js                                   ===> 创建一个子进程并调用 Unix 的 pwd 命令来显示当前目录 (child_process 模块已经不可用了)
+    11. SimulateProcessPipeline.js                      ===> 使用子进程实现对包含有关键词 "test" 的文件名的目录递归搜索 (child_process 模块已经不可用了)
+    12. WindowsProcess.js                               ===> 在 Windows 系统中运行一个子进程
+    13. DnsUse.js                                       ===> 使用 dns 模块进行域名解析
+    14. UrlUse.js                                       ===> 使用 url 模块解析URL
+    15. Utilities.js                                    ===> 使用 util.inherits 方法实现继承
+    16. EventEmitterDemo.js                             ===> EventEmitter 基本功能示例
+    17. InheritEventEmitter.js                          ===> 通过继承 EventEmitter 创建支持时间功能的对象
+    
 Chapter04 第4章 Node 模块系统
 
 Chapter05 第5章 控制流、异步模式和异常处理
