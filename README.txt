@@ -47,8 +47,15 @@ Chapter03 第3章 Node 核心库
     15. Utilities.js                                    ===> 使用 util.inherits 方法实现继承
     16. EventEmitterDemo.js                             ===> EventEmitter 基本功能示例
     17. InheritEventEmitter.js                          ===> 通过继承 EventEmitter 创建支持时间功能的对象
-    
+
 Chapter04 第4章 Node 模块系统
+    01. ColorsUse.js                                    ===> 使用 Colors 模块
+    02. OptimistUse.js                                  ===> 使用 Optimist 模块
+    03. OptimistUse2.js                                 ===> 使用 Optimist 模块处理长选项
+    04. UnderscoreUse.js                                ===> 使用 Underscore 模块
+    05. CustomModule                                    ===> 打包整个目录
+    06. InputChecker                                    ===> 自定义模块
+    07. InputCheckerTest.js                             ===> 测试 InputChecker 自定义模块
 
 Chapter05 第5章 控制流、异步模式和异常处理
 
