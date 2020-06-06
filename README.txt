@@ -58,6 +58,20 @@ Chapter04 第4章 Node 模块系统
     07. InputCheckerTest.js                             ===> 测试 InputChecker 自定义模块
 
 Chapter05 第5章 控制流、异步模式和异常处理
+    01. UsePromise.js                                   ===> 使用 Node promise
+    02. TestPromise.js                                  ===> 测试 UsePromise.js
+    03. LastCallbackFunctionality.js                    ===> last callback functionality 的基本结构
+    04. SequentialExecution.js                          ===> 顺序执行的示例程序
+    05. AsyncExec.js                                    ===> 04程序的异步实现
+    06. ReadAndModifyFileContent.js                     ===> 读取目录文件列表并修改文件内容
+    07. UseStats.js                                     ===> 使用 fs.stats 函数检查文件类型
+    08. UseStep.js                                      ===> 使用 Step 执行串行异步任务
+    09. UseStepGroup.js                                 ===> 使用 Step 的 group() 将异步处理分组
+    10. UseStepParallel.js                              ===> 使用 Step 模块的 parallel 功能对一组文件进行读写操作
+    11. UseAsyncWaterfall.js                            ===> 使用 async.waterfall 异步实现读取，修改和写入文件内容
+    12. UseAsyncWaterfall2.js                           ===> 从目录中获取对象，测试并寻找文件；读取文件内容，修改并写回；记录修改日记
+    13. UseAsyncParallel.js                             ===> 使用并行方式打开三个文件并读取内容
+    
 
 Chapter06 第6章 路由寻址、服务文件和中间件
 
