@@ -71,9 +71,22 @@ Chapter05 第5章 控制流、异步模式和异常处理
     11. UseAsyncWaterfall.js                            ===> 使用 async.waterfall 异步实现读取，修改和写入文件内容
     12. UseAsyncWaterfall2.js                           ===> 从目录中获取对象，测试并寻找文件；读取文件内容，修改并写回；记录修改日记
     13. UseAsyncParallel.js                             ===> 使用并行方式打开三个文件并读取内容
-    
 
 Chapter06 第6章 路由寻址、服务文件和中间件
+    01. StaticFileServer                                ===> 一个简单的静态文件网络服务器
+    02. FinalStaticFileServer                           ===> 最基本的静态文件服务器最终版本
+    03. MorganAndFavicon.js                             ===> 在基于 Connect 的程序中集成 morgan(logger) 和 serve-favicon(favicon) 中间件
+    04. InnerConnect.js                                 ===> 直接在程序中加入 Connect 内建的中间件
+    05. ServeStatic.js                                  ===> 使用 serve-static 中间件创建一个静态文件服务器
+    06. WriteLogToFile.js                               ===> 将 log 写入文件并改变样式
+    07. CookieParser.js                                 ===> 访问 HTTP request cookie，用于 console 信息
+    08. CookieSession.js                                ===> 使用 session cookie 来跟踪资源访问
+    09. CustomErrorHandler.js                           ===> 创建一个定制的错误处理中间件模块
+    10. TestCustomErrorHandler.js                       ===> 测试自定义中间件
+    11. UseCrossroads.js                                ===> 使用 Corssroads 将 URL 请求定位到具体的操作
+    12. PathMappingAndProcessing.js                     ===> 根据给定的路径映射到路由处理函数
+    13. UseHttpProxy.js                                 ===> 使用 http-proxy 创建代理服务器
+    14. HandleDynamicAndStaticRequests.js               ===> 使用 Connect、Crossroads 和 http-proxy 处理动态和静态的请求
 
 Chapter07 第7章 Express 框架
 
