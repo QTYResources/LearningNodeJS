@@ -89,6 +89,11 @@ Chapter06 第6章 路由寻址、服务文件和中间件
     14. HandleDynamicAndStaticRequests.js               ===> 使用 Connect、Crossroads 和 http-proxy 处理动态和静态的请求
 
 Chapter07 第7章 Express 框架
+    01. site                                            ===> 使用 express 命令自动生成的模板
+    02. PathRouting.js                                  ===> 测试不同路由路径模式
+    03. ProcessingForms.js                              ===> 将 widget 数据传递给 Express 应用程序的 HTML
+    04. PutAndDeleteMethod.js                           ===> 修改后的 Widget 应用程序，支持编辑和删除 widget 并能列出所有 widget
+    05. FullRest                                        ===> MVC模式使用
 
 Chapter08 第8章 Express、模板系统和 CSS
 
