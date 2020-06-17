@@ -16,7 +16,11 @@ app.set('view engine', 'jade')
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'))
 app.use(logger('dev'))
-app.use(stylus.middleware(path.join(__dirname, 'public/stylesheets')))
+app.use(stylus.middleware({
+  src: path.join(__dirname, 'views/stylus'),
+  dest: path.join(__dirname, 'public/stylesheets')
+}))
+// app.use(stylus.middleware(path.join(__dirname, 'views/stylus')))
 app.use(staticServe(__dirname + '/public'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(methodOverride(function (req, res) {
