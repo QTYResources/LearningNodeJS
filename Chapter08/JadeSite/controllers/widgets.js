@@ -1,19 +1,22 @@
+// in memory data store
 var widgets = [
   {
     id: 1,
-    name: "The Great Widget",
-    price: 1000.00
+    name: 'My Special Widget',
+    price: 100.00,
+    desc: 'A widget beyond price'
   }
 ]
 
 // index listing of widgets at /widgets/
 exports.index = function (req, res) {
-  res.send(widgets)
+  res.render('widgets/index', {title: 'Widgets', widgets: widgets})
 }
 
 // display new widget form
 exports.new = function (req, res) {
-  res.send('displaying new widget form')
+  var filepath = require('path').normalize(__dirname + "/../public/widgets/new.html")
+  res.sendFile(filepath)
 }
 
 // add a widget
@@ -22,10 +25,11 @@ exports.create = function (req, res) {
   widgets[widgets.length] = {
     id: index,
     name: req.body.widgetname,
-    price: parseFloat(req.body.widgetprice)
+    price: parseFloat(req.body.widgetprice),
+    desc: req.body.widgetdesc
   }
   console.log(widgets[index - 1])
-  res.send('Widget ' + req.body.widgetname + ' added with id ' + index)
+  res.render('widgets/added', {title: 'Widget Added', widget:widgets[index - 1]})
 }
 
 // show a widget
@@ -34,7 +38,7 @@ exports.show = function (req, res) {
   if (!widgets[index]) {
     res.send('There is no widget with id of ' + req.params.id)
   } else {
-    res.send(widgets[index])
+    res.render('widgets/show', {title: 'Show Widget', widget: widgets[index]})
   }
 }
 
@@ -49,7 +53,8 @@ exports.destroy = function (req, res) {
 
 // display eidt form 
 exports.edit = function (req, res) {
-  res.send('displaying edit form')
+  var index = parseInt(req.params.id) - 1
+  res.render('widgets/edit', {title: 'Edit Widget', widget:widgets[index]})
 }
 
 // update a widget
@@ -58,8 +63,9 @@ exports.update = function (req, res) {
   widgets[index] = {
     id: index + 1,
     name: req.body.widgetname,
-    price: parseFloat(req.body.widgetprice)
+    price: parseFloat(req.body.widgetprice),
+    desc: req.body.widgetdesc
   }
   console.log(widgets[index])
-  res.send('Updated ' + req.params.id)
+  res.render('widgets/added', {title: 'Widget Edited', widget: widgets[index]})
 }

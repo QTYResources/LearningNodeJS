@@ -96,6 +96,11 @@ Chapter07 第7章 Express 框架
     05. FullRest                                        ===> MVC模式使用
 
 Chapter08 第8章 Express、模板系统和 CSS
+    01. EjsGenerateHtml.js                              ===> 根据数据和 EJS 模板生成 HTML
+    02. EjsSite                                         ===> 在 Express 中使用 ejs
+    03. MoreObjectSite                                  ===> 多对象环境改造
+    04. JadeSite                                        ===> 使用 Jade 模板的网站
+    
 
 Chapter09 第9章 结构化数据、Node 和 Redis
 
