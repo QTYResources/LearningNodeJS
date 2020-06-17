@@ -100,7 +100,7 @@ Chapter08 第8章 Express、模板系统和 CSS
     02. EjsSite                                         ===> 在 Express 中使用 ejs
     03. MoreObjectSite                                  ===> 多对象环境改造
     04. JadeSite                                        ===> 使用 Jade 模板的网站
-    
+    05. StylusSite                                      ===> 使用 Stylus 模块生成CSS的网站
 
 Chapter09 第9章 结构化数据、Node 和 Redis
 
