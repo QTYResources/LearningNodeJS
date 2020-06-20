@@ -1,6 +1,6 @@
 《Node学习指南》配套源代码
 
-书名：Node学习指南
+中文书名：Node学习指南
 英文书名：Learning Node
 
 ISBN: 978-7-115-33796-2
@@ -101,6 +101,8 @@ Chapter08 第8章 Express、模板系统和 CSS
     05. StylusSite                                      ===> 使用 Stylus 模块生成CSS的网站
 
 Chapter09 第9章 结构化数据、Node 和 Redis
+    01. GameLeaderboardSite                             ===> 游戏得分排行榜网站
+
 
 Chapter10 第10章 Node 和 MongoDB：文档中心数据
 
