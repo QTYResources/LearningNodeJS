@@ -103,6 +103,7 @@ Chapter08 第8章 Express、模板系统和 CSS
 Chapter09 第9章 结构化数据、Node 和 Redis
     01. GameLeaderboardSite                             ===> 游戏得分排行榜网站
     02. MessageQueue.js                                 ===> Web 日志处理程序：处理条目并发送图像资源 URL 到消息队列
+    03. RedisSite                                       ===> 使用 Redis 为网站添加访问统计功能
     
 
 Chapter10 第10章 Node 和 MongoDB：文档中心数据
