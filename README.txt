@@ -104,9 +104,11 @@ Chapter09 第9章 结构化数据、Node 和 Redis
     01. GameLeaderboardSite                             ===> 游戏得分排行榜网站
     02. MessageQueue.js                                 ===> Web 日志处理程序：处理条目并发送图像资源 URL 到消息队列
     03. RedisSite                                       ===> 使用 Redis 为网站添加访问统计功能
-    
 
 Chapter10 第10章 Node 和 MongoDB：文档中心数据
+    01. UseMongoDB.js                                   ===> 创建/打开数据库，删除所有文档并添加两个新的文档
+    02. UseMongoDB2.js                                  ===> 插入四条文档数据然后用 find 方法获取该数据
+    
 
 Chapter11 第11章 Node 与关系型数据库
 
