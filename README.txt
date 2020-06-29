@@ -108,7 +108,8 @@ Chapter09 第9章 结构化数据、Node 和 Redis
 Chapter10 第10章 Node 和 MongoDB：文档中心数据
     01. UseMongoDB.js                                   ===> 创建/打开数据库，删除所有文档并添加两个新的文档
     02. UseMongoDB2.js                                  ===> 插入四条文档数据然后用 find 方法获取该数据
-    
+    03. UseMongoDB3.js                                  ===> 更新一个 MongoDB 文档
+    04. MongoDBSite                                     ===> 使用 Mongoose 重构 Weiget网站
 
 Chapter11 第11章 Node 与关系型数据库
 

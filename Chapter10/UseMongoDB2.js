@@ -44,11 +44,33 @@ MongoClient.connect(url, {useUnifiedTopology: true}, function (err, client) {
             console.log(err)
           } else {
             // 返回所有文档
-            col.find().toArray(function (err, docs) {
-              console.log(docs)
+            // col.find().toArray(function (err, docs) {
+            //   console.log(docs)
 
-              // 关闭数据库连接
-              client.close()
+            //   // 关闭数据库连接
+            //   client.close()
+            // })
+            
+            // col.find({type: 'A'}, {projection: {type: 0}}).toArray(function (err, docs) {
+            //   if (err) {
+            //     console.log(err)
+            //   } else {
+            //     console.log(docs)
+
+            //     // 关闭数据库
+            //     client.close()
+            //   }
+            // })
+
+            col.find({id: 1}, {projection: {title: 1}}).toArray(function (err, docs) {
+              if (err) {
+                console.log(err)
+              } else {
+                console.log(docs)
+
+                // 关闭数据库
+                client.close()
+              }
             })
           }
         })

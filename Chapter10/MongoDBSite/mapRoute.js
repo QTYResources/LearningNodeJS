@@ -12,21 +12,18 @@ exports.mapRoute = function (app, prefix) {
   app.get(prefix + '/new', prefixObj.new)
 
   // show 
-  app.get(prefix + '/:id', prefixObj.show)
+  app.get(prefix + '/:sn', prefixObj.show)
 
   // create
   app.post(prefix + '/create', prefixObj.create)
   
   // edit
-  app.get(prefix + '/:id/edit', prefixObj.edit)
+  app.get(prefix + '/:sn/edit', prefixObj.edit)
 
   // update
-  app.put(prefix + '/:id', prefixObj.update)
+  app.put(prefix + '/:sn', prefixObj.update)
 
   // destroy
-  app.delete(prefix + '/:id', prefixObj.destroy)
-
-  // stats 
-  app.get(prefix + '/stats', prefixObj.stats)
+  app.delete(prefix + '/:sn', prefixObj.destroy)
 
 }
